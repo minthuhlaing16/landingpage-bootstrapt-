@@ -41,20 +41,26 @@
     <header>
       <!-- Start Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
-        <a href="index.html" class="navbar-brand text-light">
+        <a href="index.html" class="navbar-brand text-light mx-3">
           <img src="./assets/img/fav/favicon.png" alt="favicon" width="70" />
           <span class="text-uppercase h2 fw-bold mx-2"
             >Plannco <span class="h3">Home Decoration</span></span
           >
         </a>
 
-        <button type="button" class="">
-          <div class="lines1"></div>
-          <div class="lines2"></div>
-          <div class="lines3"></div>
+        <button
+          type="button"
+          class="navbar-toggler navbuttons"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <div class="bg-light lines1"></div>
+          <div class="bg-light lines2"></div>
+          <div class="bg-light lines3"></div>
         </button>
 
         <div
+          id="nav"
           class="navbar-collapse collapse justify-content-end text-uppercase fw-bold"
         >
           <ul class="navbar-nav">
@@ -99,13 +105,52 @@
       <!-- End Navbar -->
 
       <!-- Start Banner  -->
-      <div></div>
+      <div class="text-light text-center text-md-end banners">
+        <h1 class="display-4 bannerheaders">
+          Welcome to <span class="display-2 text-uppercase">Plannco</span>Home
+          Decoration Co.,ltds
+        </h1>
+        <p class="lead bannerparagraphs">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, natus.
+        </p>
+      </div>
       <!-- End Banner  -->
     </header>
     <!-- End Header Section  -->
 
     <!-- Start About Us Section  -->
-    <section></section>
+    <section class="py-5 aboutuss">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="./assets/img/users/staffgirl1.png" alt="staffgirl1" />
+          </div>
+          <div class="col-sm-6 text-white">
+            <div class="col-md-12">
+              <h2 class="text-uppercase">Who Are We ??</h2>
+              <div class="lines"></div>
+              <div class="lines"></div>
+              <div class="lines"></div>
+            </div>
+            <h5>
+              <i
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo,
+                molestias.</i
+              >
+            </h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+              officia maiores laudantium ipsa blanditiis repellendus adipisci
+              delectus rerum aut modi perferendis quod ipsam, placeat quis,
+              fugiat quaerat atque hic ratione!
+            </p>
+            <a href="javascript:void(0);" class="btn btn-danger rounded-0"
+              >Read Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- End About Us Section  -->
 
     <!-- Start Property Section  -->
