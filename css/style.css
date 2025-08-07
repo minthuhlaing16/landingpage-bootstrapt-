@@ -164,3 +164,96 @@ header {
 }
 
 /* End About Us Section  */
+
+/* Start Property Section */
+
+.titles {
+  text-transform: uppercase;
+  /* background-color: steelblue; */
+  display: inline;
+  padding: 5px 20px;
+
+  position: relative;
+}
+
+.titles::before,
+.titles::after {
+  content: "";
+
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+
+  position: absolute;
+}
+
+.titles::before {
+  left: 0;
+  bottom: 0;
+
+  border-left: 3px solid var(--fruit-color);
+  border-bottom: 3px solid var(--fruit-color);
+}
+
+.titles::after {
+  right: 0;
+  top: 0;
+
+  border-right: 3px solid var(--fruit-color);
+  border-top: 3px solid var(--fruit-color);
+}
+
+.propertieslists {
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+}
+
+.activeitems {
+  color: var(--primary-color);
+}
+/* End Property Section  */
+
+/* Start Adv Section  */
+
+.missions {
+  background-color: var(--primary-color);
+}
+
+.advimages {
+  width: 400px;
+}
+
+.fromlefts {
+  animation-name: fromleftani;
+  animation-duration: 3s;
+}
+
+.fromrights {
+  animation-name: fromrightani;
+  animation-duration: 3s;
+}
+
+@keyframes fromleftani {
+  from {
+    transform: translateX(-120px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fromrightani {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* End Adv Section  */
