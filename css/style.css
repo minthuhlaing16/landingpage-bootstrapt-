@@ -187,6 +187,10 @@ header {
   position: absolute;
 }
 
+.titles ~ p {
+  padding-top: 10px;
+}
+
 .titles::before {
   left: 0;
   bottom: 0;
@@ -387,3 +391,70 @@ ul.clientlists img {
 }
 
 /* End Customer Section  */
+
+/* Start Quotation Section */
+.quotes {
+  background-color: var(--primary-color);
+  padding: 30px 50px;
+  margin: -30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phoneicons {
+  width: 30px;
+}
+
+.quotes .infos {
+  display: flex;
+}
+
+.quotes .btn-calls {
+  width: 170px;
+  height: 50px;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 15px;
+  border-radius: 100px;
+  line-height: 40px;
+
+  transform: translateY(-1px);
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.quotes .btn-calls:hover {
+  transform: translateY(0px);
+  box-shadow: -3px 3px 3px #444;
+}
+/* End Quotation Section */
+
+/* Start Furniture Section */
+
+.furicons img {
+  width: 70px;
+}
+
+.furicons div:nth-of-type(even) {
+  background-color: #f1f1f1;
+}
+
+/* End Furniture Section */
+
+/* Start Contact Section  */
+.contacts {
+  background-image: linear-gradient(
+      100deg,
+      rgba(0, 0, 0, 0.9) 50%,
+      rgba(0, 0, 0, 0.5) 30%,
+      transparent 70%
+    ),
+    url(../assets/img/banner/banner3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* End Contact Section  */
