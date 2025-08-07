@@ -37,6 +37,8 @@ header {
 .navbar {
   background: linear-gradient(rgba(0, 0, 0, 0.3), var(--primary-color));
   padding: 20px 30px;
+
+  transition: all 0.7s linear;
 }
 
 .navmenus {
