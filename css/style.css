@@ -20,6 +20,63 @@ body {
   margin: 0;
 }
 
+/* Start Backtotop  */
+.btn-backtotops {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 10px;
+
+  padding: 10px;
+
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  z-index: 1000;
+}
+/* End Backtotop  */
+
+/* Start Stick Note */
+.sticknotes a {
+  width: 100px;
+  /* background-color: slateblue; */
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+
+  position: fixed;
+  left: -80px;
+
+  padding: 15px;
+
+  transition: left 0.5s;
+
+  z-index: 100000;
+}
+
+.sticknotes a:hover {
+  left: 0;
+}
+
+.sticknotes .about {
+  top: 200px;
+  background-color: forestgreen;
+}
+.sticknotes .blog {
+  top: 260px;
+  background-color: var(--primary-color);
+}
+.sticknotes .news {
+  top: 320px;
+  background-color: var(--secondary-color);
+}
+.sticknotes .contact {
+  top: 380px;
+  background-color: var(--fruit-color);
+}
+/* End Stick Note */
+
 /* Start Header Section */
 header {
   height: 100vh;
@@ -457,4 +514,69 @@ ul.clientlists img {
   background-position: center;
   background-attachment: fixed;
 }
+
+.contacts .inputs {
+  background-color: transparent;
+  color: #fff;
+  border-color: transparent;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+
+  transition: all 0.8s;
+}
+
+.contacts .inputs:focus {
+  /* outline: none; */
+  box-shadow: none;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.inputs::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.labels {
+  color: red;
+  display: block;
+  margin-top: -66px;
+  margin-left: 15px;
+}
+
+.inputs:placeholder-shown + .labels {
+  /* opacity: 0; */
+  visibility: hidden;
+}
+
+.submit-btns {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+
+  transition: all 0.3s;
+}
+
+.submit-btns:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
 /* End Contact Section  */
+
+/* Start footer link  */
+
+.footerlinks {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 13px;
+
+  transition: all 0.3s;
+}
+
+.footerlinks:hover {
+  color: orange;
+  /* text-decoration: underline; */
+  border-bottom: 1px solid orange;
+  letter-spacing: 2px;
+}
+/* End footer link  */

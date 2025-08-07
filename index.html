@@ -34,11 +34,24 @@
   </head>
   <body>
     <!-- Start Back to top -->
-    <div></div>
+    <div class="fixed-bottom">
+      <a href="#header" class="btn-backtotops"
+        ><i class="fas fa-arrow-up"></i
+      ></a>
+    </div>
     <!-- End Back to top -->
 
+    <!-- Start Stick Note -->
+    <div class="sticknotes">
+      <a href="javascript:void(0);" class="about">About</a>
+      <a href="javascript:void(0);" class="blog">Blog</a>
+      <a href="javascript:void(0);" class="news">News</a>
+      <a href="javascript:void(0);" class="contact">Contact</a>
+    </div>
+    <!-- End Stick Note -->
+
     <!-- Start Header Section -->
-    <header>
+    <header id="header">
       <!-- Start Navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
         <a href="index.html" class="navbar-brand text-light mx-3">
@@ -70,9 +83,7 @@
               >
             </li>
             <li class="nav-item">
-              <a href="javascript:void(0);" class="nav-link mx-2 menuitems"
-                >About Us</a
-              >
+              <a href="#aboutus" class="nav-link mx-2 menuitems">About Us</a>
             </li>
             <li class="nav-item">
               <a href="javascript:void(0);" class="nav-link mx-2 menuitems"
@@ -119,7 +130,7 @@
     <!-- End Header Section  -->
 
     <!-- Start About Us Section  -->
-    <section class="py-5 aboutuss">
+    <section id="aboutus" class="py-5 aboutuss">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">

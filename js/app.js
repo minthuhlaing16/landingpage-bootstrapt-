@@ -1,6 +1,20 @@
 // Jquery nae yay mar
 
 $(document).ready(function () {
+  // Start back to top
+  $(".btn-backtotops").hide();
+  $(window).scroll(function () {
+    let getscrolltop = $(this).scrollTop();
+    // console.log(getscrolltop);
+
+    if (getscrolltop >= 370) {
+      $(".btn-backtotops").fadeIn(1000);
+    } else {
+      $(".btn-backtotops").fadeOut(1000);
+    }
+  });
+  // End back to top
+
   // Start Nav Bar
   $(window).scroll(function () {
     let getscrolltop = $(this).scrollTop();
@@ -66,3 +80,13 @@ $(document).ready(function () {
   });
   // End Adv Section
 });
+
+// Start Footer
+
+const getyear = document.getElementById("getyear");
+
+const getfullyear = new Date().getFullYear();
+
+getyear.textContent = getfullyear;
+
+// End Footer
